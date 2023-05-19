@@ -16,6 +16,57 @@ body {
   color: hsl(236, 13%, 42%);
   font-weight: 400;
   line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+.container {
+  padding-top: 5vh;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  padding-bottom: 10vh;
+  display: grid;
+  grid-template-rows: min-content 60vh min-content;
+  grid-template-columns: [full-start] repeat(3, [col-start] minmax(min-content, 1fr) [col-end]) [full-start];
+}
+
+.navbar {
+  grid-column: full-start/full-end;
+  padding: 2rem 0;
+  display: grid;
+  align-content: center;
+}
+.navbar__list {
+  justify-self: end;
+  align-items: center;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  grid-column-gap: 5rem;
+}
+.navbar__item:hover {
+  color: hsl(35, 77%, 62%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.navbar__logo {
+  justify-self: start;
+  grid-row: 1/2;
+}
+
+.header {
+  background-color: hsl(35, 77%, 62%);
+  grid-column: full-start/col-end 2;
+}
+
+.news {
+  background-color: greenyellow;
+  grid-column: full-start/full-end;
+}
+
+.info {
+  background-color: hsl(240, 100%, 5%);
+  grid-column: col-start 3/col-end 3;
+  margin-left: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

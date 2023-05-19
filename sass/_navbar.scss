@@ -1,0 +1,31 @@
+.navbar {
+    grid-column: full-start / full-end;
+    padding: 2rem 0;
+
+    display: grid;
+    align-content: center;
+
+    &__list {
+        justify-self: end;
+        align-items: center;
+        grid-row: 1 / 2;
+
+        display: grid;
+        grid-template-columns: repeat(5, max-content);
+        grid-column-gap: 5rem;
+    }
+
+    &__item {
+        &:hover {
+            color: $soft-orange;
+            transition: all .3s ease;
+            cursor: pointer;
+        }
+
+    }
+
+    &__logo {
+        justify-self: start;
+        grid-row: 1 / 2;
+    }
+}
