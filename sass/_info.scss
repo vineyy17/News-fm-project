@@ -1,8 +1,8 @@
 .infos {
     background-color: $very-dark-blue;
     grid-column: col-start 3 / col-end 3;
-    margin-left: 2rem;
-    padding: 3rem 1.5rem;
+    margin-left: 2.5rem;
+    padding: 3rem 2rem;
 
     display: grid;
     grid-template-rows: 1fr repeat(3, min-content);
