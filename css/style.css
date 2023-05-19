@@ -21,8 +21,8 @@ body {
 
 .container {
   padding-top: 3vh;
-  padding-left: 7vw;
-  padding-right: 7vw;
+  padding-left: 6vw;
+  padding-right: 6vw;
   display: grid;
   grid-template-rows: min-content min-content min-content;
   grid-template-columns: [full-start] repeat(3, [col-start] minmax(min-content, 1fr) [col-end]) [full-start];
@@ -32,12 +32,30 @@ body {
   font-size: 6rem;
   font-weight: 700;
   line-height: 1;
+}
+.heading-1--dark {
   color: hsl(240, 100%, 5%);
+}
+.heading-1--orange {
+  color: hsl(35, 77%, 62%);
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.heading-2 {
+  color: #fff;
+  font-size: 1.7rem;
+}
+.heading-2:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+  transition: all 0.3s ease;
 }
 
 .navbar {
   grid-column: full-start/full-end;
-  padding: 2rem 0;
+  padding-top: 0;
+  padding-bottom: 1.5vh;
   display: grid;
   align-content: center;
 }
@@ -50,7 +68,7 @@ body {
   grid-column-gap: 4rem;
 }
 .navbar__item:hover {
-  color: hsl(35, 77%, 62%);
+  color: hsl(5, 85%, 63%);
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -87,15 +105,37 @@ body {
   grid-column: 1/2;
 }
 
-.news {
+.news_section {
   background-color: greenyellow;
   grid-column: full-start/full-end;
+  margin-top: 5rem;
+}
+
+.infos {
+  background-color: hsl(240, 100%, 5%);
+  grid-column: col-start 3/col-end 3;
+  margin-left: 2rem;
+  padding: 3rem 1.5rem;
+  display: grid;
+  grid-template-rows: 1fr repeat(3, min-content);
+  grid-row-gap: 4rem;
 }
 
 .info {
-  background-color: hsl(240, 100%, 5%);
-  grid-column: col-start 3/col-end 3;
-  margin-left: 3rem;
+  color: hsl(233, 8%, 79%);
+}
+.info__text {
+  padding-top: 1rem;
+}
+.info__text::after {
+  content: "";
+  height: 1px;
+  display: block;
+  background-color: currentColor;
+  margin-top: 2vw;
+}
+.info__text--last::after {
+  content: none;
 }
 
 .btn {

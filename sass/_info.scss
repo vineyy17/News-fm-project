@@ -1,5 +1,36 @@
-.info {
+.infos {
     background-color: $very-dark-blue;
     grid-column: col-start 3 / col-end 3;
-    margin-left: 3rem;
+    margin-left: 2rem;
+    padding: 3rem 1.5rem;
+
+    display: grid;
+    grid-template-rows: 1fr repeat(3, min-content);
+    grid-row-gap: 4rem;
+
+}
+
+.info {
+    color: $grayish-blue;
+
+    &__text {
+
+        padding-top: 1rem;
+
+        &::after {
+            content: "";
+            height: 1px;
+            display: block;
+            background-color: currentColor;
+            
+            margin-top: 2vw;
+        }
+    }
+
+    &__text--last {
+        &::after {
+            content: none;
+        }
+    }
+
 }

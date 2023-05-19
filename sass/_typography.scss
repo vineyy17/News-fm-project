@@ -2,5 +2,26 @@
     font-size: 6rem;
     font-weight: 700;
     line-height: 1;
-    color: $very-dark-blue;
+
+    &--dark {
+        color: $very-dark-blue;
+    }
+
+    &--orange {
+        color: $soft-orange;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+}
+
+.heading-2 {
+    color: #fff;
+    font-size: 1.7rem;
+
+    &:hover {
+        cursor: pointer;
+        color: $soft-orange;
+        transition: all .3s ease;
+    }
 }

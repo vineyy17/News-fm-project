@@ -1,6 +1,7 @@
 .navbar {
     grid-column: full-start / full-end;
-    padding: 2rem 0;
+    padding-top: 0;
+    padding-bottom: 1.5vh;
 
     display: grid;
     align-content: center;
@@ -17,7 +18,7 @@
 
     &__item {
         &:hover {
-            color: $soft-orange;
+            color: $soft-red;
             transition: all .3s ease;
             cursor: pointer;
         }

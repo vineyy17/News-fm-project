@@ -36,8 +36,8 @@ body {
 
 .container {
     padding-top: 3vh;
-    padding-left: 7vw;
-    padding-right: 7vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
     display: grid;
     grid-template-rows: min-content min-content min-content;
     grid-template-columns: [full-start] repeat(3, [col-start] minmax(min-content, 1fr) [col-end]) [full-start];
