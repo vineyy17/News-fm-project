@@ -1,11 +1,11 @@
 .news_section {
     grid-column: full-start / full-end;
-    margin-top: 5rem;
+    margin-top: 8rem;
     padding-bottom: 10rem;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-column-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-column-gap: 5rem;
 }
 
 .news {

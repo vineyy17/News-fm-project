@@ -11,6 +11,14 @@ $very-dark-blue: hsl(240, 100%, 5%);
 //FONT VARIABLES
 $font-primary: 'Inter', sans-serif;
 
+// RESPONSIVE BREAKPOINTS
+$bp-maximum: 112.5em; // 1800px
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;  // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; //600px
+
+
 
 
 *,
@@ -24,6 +32,11 @@ $font-primary: 'Inter', sans-serif;
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+
+    @media only screen and (min-width: $bp-maximum) {
+        font-size: 81.25%;
+    }
 }
 
 body {
@@ -41,4 +54,5 @@ body {
     display: grid;
     grid-template-rows: min-content min-content min-content;
     grid-template-columns: [full-start] repeat(3, [col-start] minmax(min-content, 1fr) [col-end]) [full-start];
+
 }
