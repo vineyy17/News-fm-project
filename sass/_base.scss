@@ -16,7 +16,7 @@ $bp-maximum: 112.5em; // 1800px
 $bp-largest: 75em;   // 1200px
 $bp-large: 62.5em;  // 1000px
 $bp-medium: 56.25em; // 900px
-$bp-small: 37.5em; //600px
+$bp-small: 44.37em; //710px
 
 
 
@@ -41,6 +41,10 @@ html {
         font-size: 43.75%;
     }
 
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 62.5%;
+    }
+
     @media only screen and (min-width: $bp-maximum) {
         font-size: 81.25%;
     }
@@ -61,5 +65,12 @@ body {
     display: grid;
     grid-template-rows: min-content min-content min-content;
     grid-template-columns: [full-start] repeat(3, [col-start] minmax(min-content, 1fr) [col-end]) [full-start];
+
+    @media only screen and (max-width: $bp-medium) {
+        padding-top: 3vh;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        grid-template-columns: [full-start] repeat(2, [col-start] minmax(min-content, 1fr) [col-end]) [full-start];
+    }
 
 }
