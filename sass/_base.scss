@@ -35,11 +35,10 @@ body {
 }
 
 .container {
-    padding-top: 5vh;
+    padding-top: 3vh;
     padding-left: 7vw;
     padding-right: 7vw;
-    padding-bottom: 10vh;
     display: grid;
-    grid-template-rows: min-content 60vh min-content;
+    grid-template-rows: min-content min-content min-content;
     grid-template-columns: [full-start] repeat(3, [col-start] minmax(min-content, 1fr) [col-end]) [full-start];
 }

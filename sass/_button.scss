@@ -1,0 +1,15 @@
+.btn {
+    background-color: $soft-red;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: all .3s ease;
+    letter-spacing: .3rem;
+
+    &:hover {
+        background-color: $very-dark-blue;
+    }
+}
