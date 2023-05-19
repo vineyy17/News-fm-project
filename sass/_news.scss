@@ -1,7 +1,7 @@
 .news_section {
     grid-column: full-start / full-end;
-    margin-top: 8rem;
-    padding-bottom: 10rem;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));

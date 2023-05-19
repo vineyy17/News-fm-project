@@ -15,7 +15,7 @@ $font-primary: 'Inter', sans-serif;
 $bp-maximum: 112.5em; // 1800px
 $bp-largest: 75em;   // 1200px
 $bp-large: 62.5em;  // 1000px
-$bp-medium: 50em; // 800px
+$bp-medium: 56.25em; // 900px
 $bp-small: 37.5em; //600px
 
 
@@ -33,6 +33,13 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 43.75%;
+    }
 
     @media only screen and (min-width: $bp-maximum) {
         font-size: 81.25%;
