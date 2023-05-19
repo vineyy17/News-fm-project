@@ -16,6 +16,10 @@
         display: block;
         object-fit: cover;
         min-height: 30rem;
+
+        @media only screen and (max-width: $bp-small) {
+            min-height: 100%;
+        }
     }
 
     &__image {
@@ -30,11 +34,19 @@
         @media only screen and (max-width: $bp-medium) {
             grid-column: 2 / 3;
         }
+
+        @media only screen and (max-width: $bp-small) {
+            grid-column: 1 / -1;
+        }
     }
 
     &__lg-text {
         @media only screen and (max-width: $bp-medium) {
             grid-column: 1 / 2;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            grid-column: 1 / -1;
         }
     }
 

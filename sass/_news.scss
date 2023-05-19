@@ -34,11 +34,19 @@
         @media only screen and (max-width: $bp-medium) {
             max-height: 15rem;
         }
+
+        @media only screen and (max-width: $bp-small) {
+            max-height: 14rem;
+        }
     }
 
     &__text {
         grid-row: 3 / 4;
         grid-column: 2 / -1;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 90%;
+        }
     }
 
     &__heading {
@@ -47,6 +55,10 @@
 
         @media only screen and (max-width: $bp-medium) {
             font-size: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2.5rem;
         }
 
         &:hover {
@@ -59,9 +71,14 @@
     &__number {
         color: $grayish-blue;
         font-size: 3rem;
+        font-weight: 800;
 
         @media only screen and (max-width: $bp-medium) {
             font-size: 4.5rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3.5rem;
         }
     }
 
