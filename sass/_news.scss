@@ -60,18 +60,7 @@
     &__heading {
         color: $very-dark-blue;
         font-weight: 800;
-
-        @media only screen and (max-width: $bp-medium) {
-            font-size: 3rem;
-        }
-
-        @media only screen and (max-width: $bp-small) {
-            font-size: 2.5rem;
-        }
-
-        @media only screen and (max-width: $bp-phone) {
-            font-size: 2rem;
-        }
+        font-size: 2rem;
 
         &:hover {
             color: $soft-red;

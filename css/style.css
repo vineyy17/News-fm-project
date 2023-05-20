@@ -22,11 +22,6 @@ html {
 }
 @media only screen and (max-width: 56.25em) {
   html {
-    font-size: 62.5%;
-  }
-}
-@media only screen and (max-width: 44.37em) {
-  html {
     font-size: 56.25%;
   }
 }
@@ -89,11 +84,6 @@ body {
   cursor: pointer;
   color: hsl(35, 77%, 62%);
   transition: all 0.3s ease;
-}
-@media only screen and (max-width: 56.25em) {
-  .heading-2 {
-    font-size: 2rem;
-  }
 }
 
 .navbar {
@@ -374,21 +364,7 @@ body {
 .news__heading {
   color: hsl(240, 100%, 5%);
   font-weight: 800;
-}
-@media only screen and (max-width: 56.25em) {
-  .news__heading {
-    font-size: 3rem;
-  }
-}
-@media only screen and (max-width: 44.37em) {
-  .news__heading {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (max-width: 31.87em) {
-  .news__heading {
-    font-size: 2rem;
-  }
+  font-size: 2rem;
 }
 .news__heading:hover {
   color: hsl(5, 85%, 63%);
