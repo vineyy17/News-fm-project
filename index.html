@@ -26,6 +26,28 @@
       <span class="navbar__item">Categories</span>
     </div>
 
+    <div class="menu">
+      <input type="checkbox" class="menu__checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu__button">
+        <span class="menu__icon">&nbsp;</span>
+        <!-- <img src="/assets/images/icon-menu-close.svg" alt="Close Menu" id="menu-close" class="menu-button__image"> -->
+      </label>
+
+      <div class="menu__background">&nbsp;</div>
+
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#info_section">New</a></li>
+          <li class="menu__item"><a class="menu__link" href="#web3">Popular</a></li>
+          <li class="menu__item"><a class="menu__link" href="#news_area">Trending</a></li>
+          <li class="menu__item"><a class="menu__link" href="#news_area">Categories</a></li>
+        </ul>
+
+      </nav>
+
+    </div>
+
   </div>
 
   <div class="header">
@@ -37,7 +59,7 @@
       </picture>
     </div>
 
-    <div class="header__lg-text">
+    <div class="header__lg-text" id="web3">
       <h1 class="heading-1 heading-1--dark"> The Bright Future of Web 3.0? </h1>
     </div>
 
@@ -53,7 +75,7 @@
 
   </div>
 
-  <div class="infos">
+  <div class="infos" id="info_section">
 
     <h1 class="heading-1 heading-1--orange">New</h1>
 
@@ -87,7 +109,7 @@
 
   </div>
 
-  <div class="news_section">
+  <div class="news_section" id="news_area">
 
     <div class="news">
       <div class="news__image">
@@ -118,5 +140,6 @@
 
   </div>
 
+<script src="index.js"></script>
 </body>
 </html>
