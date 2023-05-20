@@ -17,6 +17,7 @@ $bp-largest: 75em;   // 1200px
 $bp-large: 62.5em;  // 1000px
 $bp-medium: 56.25em; // 900px
 $bp-small: 44.37em; //710px
+$bp-phone: 31.87em; //510px
 
 
 
@@ -45,8 +46,12 @@ html {
         font-size: 62.5%;
     }
 
+    @media only screen and (max-width: $bp-small) {
+        font-size: 56.25%;
+    }
+
     @media only screen and (min-width: $bp-maximum) {
-        font-size: 81.25%;
+        font-size: 75%;
     }
 }
 

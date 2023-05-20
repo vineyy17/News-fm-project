@@ -25,9 +25,14 @@ html {
     font-size: 62.5%;
   }
 }
+@media only screen and (max-width: 44.37em) {
+  html {
+    font-size: 56.25%;
+  }
+}
 @media only screen and (min-width: 112.5em) {
   html {
-    font-size: 81.25%;
+    font-size: 75%;
   }
 }
 
@@ -93,6 +98,11 @@ body {
   display: grid;
   align-content: center;
 }
+@media only screen and (max-width: 56.25em) {
+  .navbar {
+    padding-bottom: 3vh;
+  }
+}
 .navbar__list {
   justify-self: end;
   align-items: center;
@@ -127,6 +137,11 @@ body {
 @media only screen and (max-width: 56.25em) {
   .header {
     grid-column: full-start/-1;
+  }
+}
+@media only screen and (max-width: 44.37em) {
+  .header {
+    grid-row-gap: 2rem;
   }
 }
 .header__img {
@@ -211,9 +226,14 @@ body {
     max-height: 15rem;
   }
 }
-@media only screen and (max-width: 44.37em) {
+@media only screen and (max-width: 31.87em) {
   .news__img {
-    max-height: 14rem;
+    max-height: 17rem;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .news__img {
+    max-height: 15rem;
   }
 }
 .news__text {
@@ -223,6 +243,11 @@ body {
 @media only screen and (max-width: 44.37em) {
   .news__text {
     width: 90%;
+  }
+}
+@media only screen and (max-width: 31.87em) {
+  .news__text {
+    width: 100%;
   }
 }
 .news__heading {
@@ -237,6 +262,11 @@ body {
 @media only screen and (max-width: 44.37em) {
   .news__heading {
     font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 31.87em) {
+  .news__heading {
+    font-size: 2rem;
   }
 }
 .news__heading:hover {
@@ -254,9 +284,9 @@ body {
     font-size: 4.5rem;
   }
 }
-@media only screen and (max-width: 44.37em) {
+@media only screen and (min-width: 112.5em) {
   .news__number {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 
@@ -304,6 +334,11 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   letter-spacing: 0.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .btn {
+    padding: 1.5rem 0;
+  }
 }
 .btn:hover {
   background-color: hsl(240, 100%, 5%);

@@ -35,8 +35,12 @@
             max-height: 15rem;
         }
 
-        @media only screen and (max-width: $bp-small) {
-            max-height: 14rem;
+        @media only screen and (max-width: $bp-phone) {
+            max-height: 17rem;
+        }
+
+        @media only screen and (min-width: $bp-maximum) {
+            max-height: 15rem;
         }
     }
 
@@ -46,6 +50,10 @@
 
         @media only screen and (max-width: $bp-small) {
             width: 90%;
+        }
+
+        @media only screen and (max-width: $bp-phone) {
+            width: 100%;
         }
     }
 
@@ -59,6 +67,10 @@
 
         @media only screen and (max-width: $bp-small) {
             font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: $bp-phone) {
+            font-size: 2rem;
         }
 
         &:hover {
@@ -77,8 +89,8 @@
             font-size: 4.5rem;
         }
 
-        @media only screen and (max-width: $bp-small) {
-            font-size: 3.5rem;
+        @media only screen and (min-width: $bp-maximum) {
+            font-size: 5rem;
         }
     }
 
