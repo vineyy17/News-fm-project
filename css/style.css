@@ -30,6 +30,11 @@ html {
     font-size: 56.25%;
   }
 }
+@media only screen and (max-width: 31.87em) {
+  html {
+    font-size: 50%;
+  }
+}
 @media only screen and (min-width: 112.5em) {
   html {
     font-size: 75%;
@@ -297,7 +302,7 @@ body {
   padding: 5vh 2rem;
   display: grid;
   grid-template-rows: repeat(4, min-content);
-  grid-row-gap: 6vh;
+  grid-row-gap: 5vh;
 }
 @media only screen and (max-width: 56.25em) {
   .infos {
@@ -318,7 +323,7 @@ body {
   height: 1px;
   display: block;
   background-color: currentColor;
-  margin-top: 2vw;
+  margin-top: 4rem;
 }
 .info__text--last::after {
   content: none;
