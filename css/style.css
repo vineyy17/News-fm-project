@@ -201,7 +201,7 @@ body {
   transform: translateX(1rem);
 }
 .menu__checkbox:checked ~ .menu__background {
-  transform: scale(100);
+  transform: scale(80);
 }
 .menu__checkbox:checked ~ .menu__nav {
   opacity: 1;
