@@ -364,7 +364,7 @@ body {
 .news__heading {
   color: hsl(240, 100%, 5%);
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .news__heading:hover {
   color: hsl(5, 85%, 63%);
